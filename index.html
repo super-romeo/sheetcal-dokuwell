@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Tag Manager: код контейнера вставляет автор по заказу «Смоков» (СМ-09) -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://sheetcal.dokufolio.com/">
+<title>Two-way sync between Google Sheets and Google Calendar</title>
+<meta name="description" content="Turn spreadsheet rows into Google Calendar events and keep both in step: edits, moves and deletions carried in either direction, daily or on demand.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<!-- faq-jsonld:start -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Who is it for?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "People and teams who plan in Google Sheets and want the same dates as events in Google Calendar."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it work both ways?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Changes in the sheet go to the calendar, and changes in the calendar come back to the sheet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can it run automatically?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes, once a day, or any time you start it by hand."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can one sheet fill several calendars?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. A column in each row can choose the calendar for that event."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I use it already?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not yet. The service is in preparation, and we are checking whether Google Sheets users need it."
+   }
+  }
+ ]
+}
+</script>
+<!-- faq-jsonld:end -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript): по заказу «Смоков» (СМ-09) -->
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Sheet Calendar Link</a></div>
+  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Your schedule in Google Sheets, your events in Google Calendar — kept in step both ways</h1>
+    <p class="sub">For teams and individuals who plan in spreadsheets: each row becomes a calendar event with its date, time, guests and description, and when an event is moved in the calendar or a row is edited in the sheet, the other side follows.</p>
+    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
+    <p class="cta-note">Early access · No payment is taken on this page yet</p>
+  </div>
+
+  <section id="what" data-view="features_view">
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card"><b>Rows to events</b><span>Date, time, title, guests and description from your columns.</span><br><a class="btn" href="price.html" data-ev="feature_export">I need this</a></div>
+      <div class="card"><b>Calendar to sheet</b><span>Import events for a date range into a sheet you can filter.</span><br><a class="btn" href="price.html" data-ev="feature_import">I need this</a></div>
+      <div class="card"><b>Both directions</b><span>Edits, moves and deletions carried from either side.</span><br><a class="btn" href="price.html" data-ev="feature_twoway">I need this</a></div>
+      <div class="card"><b>Daily sync</b><span>An automatic run every day, or any time on demand.</span><br><a class="btn" href="price.html" data-ev="feature_schedule">I need this</a></div>
+    </div>
+  </section>
+
+  <section id="example" data-view="example_view">
+    <h2>Example (fictional data)</h2>
+    <p class="fine">A training company schedules 120 sessions a term in a Google Sheet: trainer, room, date and time. One run turns them into events in the trainers' calendars with the room in the location field. When a trainer moves a session in the calendar, the next daily sync updates its row, and the office sees the change in the sheet without asking.</p>
+    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  </section>
+<!-- seo-tekst:start -->
+  <section id="opis">
+    <h2>How it works</h2>
+    <p>Many schedules start in a spreadsheet: shifts, classes and training sessions, content calendars, project deadlines, rentals, maintenance visits. A sheet is easy to fill, sort and share. But people look at their calendar, not at the sheet, so the same dates are often typed in twice.</p>
+    <p>Copying rows into the calendar by hand works for ten events, not for a hundred. And once the events are there, the two copies drift apart: someone moves a meeting in the calendar, someone else edits the date in the sheet, and nobody is sure which version is right.</p>
+    <p>The add-on connects a Google Sheet with one or more Google Calendars. You map the columns once: which column holds the title, the start and end date and time, the location, the guests and the description. Then one run creates an event for every row.</p>
+    <p>Each row stays linked to its event through a hidden column, so the link survives sorting and filtering. When you edit a row and sync again, the event is updated; when you delete the row, you can choose whether the event is deleted too.</p>
+    <p>The link works in the other direction as well. Events changed in Google Calendar — moved to another day, renamed, given a new location — are brought back into their rows. Events for a date range can also be imported into a new sheet, which is handy for reports on time spent or for checking who was booked when.</p>
+    <p>Sync can run on demand or automatically once a day. Each run first brings changes from the calendar into the sheet and then sends the rows that no longer match back to the calendar, so both sides end up the same.</p>
+    <p>Teams on Google Workspace can use one sheet to fill several calendars, for example one calendar per trainer, room or vehicle, chosen by a column in the row.</p>
+    <p>The add-on runs inside Google Sheets for individuals and teams in any country; nothing needs to be installed on a computer.</p>
+    <p>Before a large run, a preview shows how many events will be created, changed or deleted in each calendar, so a wrong column mapping is caught before anything changes. Every run is logged in the sheet with the time and the number of events touched, and rows that could not be synced are marked with the reason, such as a missing date or an end time before the start.</p>
+    <p>Recurring work fits the same pattern: a weekly class, a monthly maintenance visit or a shift rota can be written as rows and kept in step with the calendar for the whole term or season.</p>
+    <p>The service is in preparation: we are checking whether Google Sheets users need it before it is built.</p>
+    <p>The add-on changes only the calendars you connect and the rows you map. Keeping the schedule itself correct stays with the owner of the sheet.</p>
+  </section>
+  <section id="faq">
+    <h2>Questions</h2>
+    <h3>Who is it for?</h3>
+    <p>People and teams who plan in Google Sheets and want the same dates as events in Google Calendar.</p>
+    <h3>Does it work both ways?</h3>
+    <p>Yes. Changes in the sheet go to the calendar, and changes in the calendar come back to the sheet.</p>
+    <h3>Can it run automatically?</h3>
+    <p>Yes, once a day, or any time you start it by hand.</p>
+    <h3>Can one sheet fill several calendars?</h3>
+    <p>Yes. A column in each row can choose the calendar for that event.</p>
+    <h3>Can I use it already?</h3>
+    <p>Not yet. The service is in preparation, and we are checking whether Google Sheets users need it.</p>
+  </section>
+<!-- seo-tekst:end -->
+  <section id="start" data-view="start_view">
+    <h2>Connect your first sheet</h2>
+    <p><label>Events you plan in sheets per month<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 50</option><option>50–500</option><option>500–5,000</option><option>More than 5,000</option></select></label></p>
+    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
+  <p class="muted">Two-way sync between Google Sheets and Google Calendar for the calendars and rows you connect. The schedule itself stays with its owner.</p>
+</div></footer>
+
+</body>
+</html>

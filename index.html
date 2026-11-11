@@ -16,6 +16,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Turn spreadsheet rows into Google Calendar events and keep both in step: edits, moves and deletions carried in either direction, daily or on demand.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -75,38 +79,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <!-- Google Tag Manager (noscript): по заказу «Смоков» (СМ-09) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Sheet Calendar Link</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Sheet Calendar Link</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Your schedule in Google Sheets, your events in Google Calendar — kept in step both ways</h1>
-    <p class="sub">For teams and individuals who plan in spreadsheets: each row becomes a calendar event with its date, time, guests and description, and when an event is moved in the calendar or a row is edited in the sheet, the other side follows.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Early access · No payment is taken on this page yet</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For teams and individuals who plan in spreadsheets</p>
+      <h1 class="rise" style="--i:1" data-len="long">Your schedule in Google Sheets, your events in Google Calendar&nbsp;<span class="soft">— kept in step both ways</span></h1>
+      <p class="rise" style="--i:2">For teams and individuals who plan in spreadsheets: each row becomes a calendar event with its date, time, guests and description, and when an event is moved in the calendar or a row is edited in the sheet, the other side follows.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Early access · No payment is taken on this page yet</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="70" width="1040" height="660" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="40" fill="#0a1524" font-weight="600">Sheet Calendar Link</text><line x1="120" y1="190" x2="1080" y2="190" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="240" width="48" height="48" rx="10" fill="#12397a" stroke="#dde2ea" stroke-width="2" /><text x="190" y="274" font-size="30" fill="#0a1524">Rows to events</text><rect x="120" y="350" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="190" y="384" font-size="30" fill="#0a1524">Calendar to sheet</text><rect x="120" y="460" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="190" y="494" font-size="30" fill="#0a1524">Both directions</text><rect x="120" y="570" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="190" y="604" font-size="30" fill="#0a1524">Daily sync</text><rect x="760" y="240" width="340" height="430" rx="20" fill="#dfe8f7" /><rect x="800" y="400" width="44" height="220" rx="8" fill="#12397a" stroke="#dde2ea" stroke-width="2" /><rect x="870" y="480" width="44" height="140" rx="8" fill="#b9c3d2" stroke="#dde2ea" stroke-width="2" /><rect x="940" y="360" width="44" height="260" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="1010" y="520" width="44" height="100" rx="8" fill="#dde2ea" stroke="#dde2ea" stroke-width="2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Teams and individuals</dd></div>
+      <div><dt>Sync</dt><dd>Kept in step both ways</dd></div>
+      <div><dt>Rows</dt><dd>Each row becomes a calendar</dd></div>
+      <div><dt>Access</dt><dd>Early access</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Rows to events</b><span>Date, time, title, guests and description from your columns.</span><br><a class="btn" href="price.html" data-ev="feature_export">I need this</a></div>
-      <div class="card"><b>Calendar to sheet</b><span>Import events for a date range into a sheet you can filter.</span><br><a class="btn" href="price.html" data-ev="feature_import">I need this</a></div>
-      <div class="card"><b>Both directions</b><span>Edits, moves and deletions carried from either side.</span><br><a class="btn" href="price.html" data-ev="feature_twoway">I need this</a></div>
-      <div class="card"><b>Daily sync</b><span>An automatic run every day, or any time on demand.</span><br><a class="btn" href="price.html" data-ev="feature_schedule">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="56" y="48" width="688" height="504" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="96" y="120" font-size="32" fill="#0a1524" font-weight="600">Rows to events</text><rect x="96" y="190" width="36" height="36" rx="8" fill="#12397a" /><rect x="160" y="196" width="420" height="24" rx="12" fill="#dde2ea" /><rect x="96" y="270" width="36" height="36" rx="8" fill="#b9c3d2" /><rect x="160" y="276" width="300" height="24" rx="12" fill="#dde2ea" /><rect x="96" y="350" width="36" height="36" rx="8" fill="#dde2ea" /><rect x="160" y="356" width="360" height="24" rx="12" fill="#dde2ea" /><rect x="96" y="430" width="36" height="36" rx="8" fill="#dfe8f7" /><rect x="160" y="436" width="220" height="24" rx="12" fill="#dde2ea" /></svg></div>
+        <h3>Rows to events</h3><p>Date, time, title, guests and description from your columns.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_export">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="56" y="48" width="688" height="504" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="96" y="120" font-size="32" fill="#0a1524" font-weight="600">Calendar to sheet</text><rect x="96" y="190" width="340" height="22" rx="11" fill="#dde2ea" /><rect x="96" y="260" width="260" height="22" rx="11" fill="#dde2ea" /><rect x="96" y="330" width="300" height="22" rx="11" fill="#dde2ea" /><rect x="96" y="400" width="180" height="22" rx="11" fill="#dde2ea" /><circle cx="600" cy="430" r="70" fill="#dfe8f7" stroke="#12397a" stroke-width="6" /><polyline points="560,430 590,462 646,400" fill="none" stroke="#12397a" stroke-width="8" /></svg></div>
+        <h3>Calendar to sheet</h3><p>Import events for a date range into a sheet you can filter.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_import">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="70" y="110" font-size="32" fill="#0a1524" font-weight="600">Both directions</text><rect x="70" y="170" width="260" height="360" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="100" y="230" width="180" height="20" rx="10" fill="#dde2ea" /><rect x="100" y="300" width="140" height="20" rx="10" fill="#dde2ea" /><rect x="100" y="370" width="160" height="20" rx="10" fill="#dde2ea" /><rect x="470" y="170" width="260" height="360" rx="18" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="500" y="230" width="180" height="20" rx="10" fill="#dde2ea" /><rect x="500" y="300" width="140" height="20" rx="10" fill="#dde2ea" /><rect x="500" y="370" width="160" height="20" rx="10" fill="#dde2ea" /><rect x="350" y="330" width="80" height="16" fill="#12397a" /><polygon points="430,314 468,338 430,362" fill="#12397a" /></svg></div>
+        <h3>Both directions</h3><p>Edits, moves and deletions carried from either side.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_twoway">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="56" y="48" width="688" height="504" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="96" y="120" font-size="32" fill="#0a1524" font-weight="600">Daily sync</text><rect x="96" y="180" width="600" height="64" rx="32" fill="#12397a" stroke="#dde2ea" stroke-width="3" /><rect x="96" y="265" width="600" height="64" rx="32" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="96" y="350" width="600" height="64" rx="32" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="96" y="435" width="600" height="64" rx="32" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Daily sync</h3><p>An automatic run every day, or any time on demand.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_schedule">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">A training company schedules 120 sessions a term in a Google Sheet: trainer, room, date and time. One run turns them into events in the trainers' calendars with the room in the location field. When a trainer moves a session in the calendar, the next daily sync updates its row, and the office sees the change in the sheet without asking.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>A training company schedules 120 sessions a term in a Google Sheet: trainer, room, date and time. One run turns them into events in the trainers' calendars with the room in the location field. When a trainer moves a session in the calendar, the next daily sync updates its row, and the office sees the change in the sheet without asking.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">trainer</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">Google Sheet</text><circle cx="960" cy="150" r="22" fill="#12397a" stroke="#12397a" stroke-width="6" /><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">daily sync</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="380" font-size="36" fill="#0a1524" font-weight="600">location field</text><rect x="170" y="440" width="620" height="28" rx="14" fill="#12397a" /><rect x="170" y="500" width="480" height="28" rx="14" fill="#dde2ea" /><rect x="170" y="560" width="540" height="28" rx="14" fill="#b9c3d2" /><rect x="170" y="620" width="360" height="28" rx="14" fill="#dfe8f7" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>Many schedules start in a spreadsheet: shifts, classes and training sessions, content calendars, project deadlines, rentals, maintenance visits. A sheet is easy to fill, sort and share. But people look at their calendar, not at the sheet, so the same dates are often typed in twice.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>Many schedules start in a spreadsheet: shifts, classes and training sessions, content calendars, project deadlines, rentals, maintenance visits. A sheet is easy to fill, sort and share. But people look at their calendar, not at the sheet, so the same dates are often typed in twice.</p>
     <p>Copying rows into the calendar by hand works for ten events, not for a hundred. And once the events are there, the two copies drift apart: someone moves a meeting in the calendar, someone else edits the date in the sheet, and nobody is sure which version is right.</p>
     <p>The add-on connects a Google Sheet with one or more Google Calendars. You map the columns once: which column holds the title, the start and end date and time, the location, the guests and the description. Then one run creates an event for every row.</p>
     <p>Each row stays linked to its event through a hidden column, so the link survives sorting and filtering. When you edit a row and sync again, the event is updated; when you delete the row, you can choose whether the event is deleted too.</p>
@@ -118,31 +152,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Recurring work fits the same pattern: a weekly class, a monthly maintenance visit or a shift rota can be written as rows and kept in step with the calendar for the whole term or season.</p>
     <p>The service is in preparation: we are checking whether Google Sheets users need it before it is built.</p>
     <p>The add-on changes only the calendars you connect and the rows you map. Keeping the schedule itself correct stays with the owner of the sheet.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Who is it for?</h3>
-    <p>People and teams who plan in Google Sheets and want the same dates as events in Google Calendar.</p>
-    <h3>Does it work both ways?</h3>
-    <p>Yes. Changes in the sheet go to the calendar, and changes in the calendar come back to the sheet.</p>
-    <h3>Can it run automatically?</h3>
-    <p>Yes, once a day, or any time you start it by hand.</p>
-    <h3>Can one sheet fill several calendars?</h3>
-    <p>Yes. A column in each row can choose the calendar for that event.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether Google Sheets users need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Who is it for?</h3><p>People and teams who plan in Google Sheets and want the same dates as events in Google Calendar.</p></div>
+      <div class="split flip"><h3>Does it work both ways?</h3><p>Yes. Changes in the sheet go to the calendar, and changes in the calendar come back to the sheet.</p></div>
+      <div class="split flip"><h3>Can it run automatically?</h3><p>Yes, once a day, or any time you start it by hand.</p></div>
+      <div class="split flip"><h3>Can one sheet fill several calendars?</h3><p>Yes. A column in each row can choose the calendar for that event.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether Google Sheets users need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Connect your first sheet</h2>
-    <p><label>Events you plan in sheets per month<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 50</option><option>50–500</option><option>500–5,000</option><option>More than 5,000</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Connect your first sheet</h2>
+    </div>
+    <div class="tile stack">
+      <label>Events you plan in sheets per month<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Up to 50</option><option>50–500</option><option>500–5,000</option><option>More than 5,000</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Start</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Sheet Calendar Link</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Two-way sync between Google Sheets and Google Calendar for the calendars and rows you connect. The schedule itself stays with its owner.</p>
+  <p>Two-way sync between Google Sheets and Google Calendar for the calendars and rows you connect. The schedule itself stays with its owner.</p>
 </div></footer>
 
 </body>
